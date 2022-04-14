@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="10連ガチャシミュレータ">
+    <title>BlackJack</title>
+    <meta name="description" content="BlackJack">
 
     <!--SNSでシェアした際にタイトルやイメージ画像、詳細などを表示する-->
-    <meta property="og:title" content="10ren gacha">
+    <meta property="og:title" content="BlackJack">
     <meta property="og:type" content="website">
     <meta property="og:url" content="#">
     <!-- <meta property="og:image" content="#"> -->
-    <meta property="og:site_name" content="10ren simulation">
-    <meta property="og:description" content="10renガチャのシミュレーションができます">
+    <meta property="og:site_name" content="BlackJack">
+    <meta property="og:description" content="BlackJackができます">
 
 
     <!--スマホから見たとき、番号に電話リンクをつけない-->
@@ -23,6 +23,40 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <main>
+        <!-- table -->
+        <section>
+            <div class="table-wrapper"></div>
+                <div id="result" class="result">
+                    <img class="lose" src="image/lose2.gif" alt="loseの画像">
+                    <img class="win" src="image/win.gif" alt="winの画像">
+                    <img class="draw" src="image/draw.jpeg" alt="drawの画像">
+                </div>
+                <div class="info">
+                    <p class="who">Dealer</p>
+                    <p id="dealer-score">score:<span class="score"> 0</span></p>
+                </div>
+                <div id="dealer" class="table"></div>
+                <div id="player" class="table"></div>
+                <div class="info">
+                    <p class="who">Player</p>
+                    <p id="player-score">score:<span class="score"> 0</span></p>
+                </div>
+            </div>
+        </section>
+        <!-- //table -->
 
+        <!-- command -->
+        <section>
+            <button id="start" class="start">Start</button>
+            <button id="stand" class="stand btn">Stand</button>
+            <button id="hit" class="hit btn">Hit</button>
+            <button id="retry" class="retry">Retry</button>
+        </section>
+        <!-- command -->
+
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/logic.js"></script>
 </body>
 </html>

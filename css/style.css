@@ -1,0 +1,96 @@
+@charset "utf-8";
+html{
+    font-size: 62.5%;/* 16px × 62.5% = 10px */
+}
+body{
+    color: #333333;
+    /* font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif; */
+    font-size: 1.6rem;
+    background-color: #e7e8e6;
+}
+main{
+    /* padding: 80px 0; */
+    text-align: center;
+}
+img{
+    width: 126px;
+    height: auto;
+}
+/* -----------------
+    table
+*--------------- */
+.table-wrapper{
+    position: relative;
+}
+.result{
+    position: absolute;
+    top: 6%;
+    left: 27%;
+    opacity: 75%;
+}
+.result>img{
+    display: none;
+    width: 700px;
+}
+.table{
+    height: 180px;
+    padding: 10px 0;
+    background-color: rgb(225, 233, 199);
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.who{
+    margin:0 20px 0 0;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.score{
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+/* -----------------
+    button
+*--------------- */
+button{
+    width: 200px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    color: #707070;
+    background-color: #ffd61a;
+    font-size: 3.6rem;
+    margin: 10px;
+}
+button:hover{
+    transform: scale(1.2, 1.2);
+    opacity: 0.6;
+    animation: flash 0.2s linear infinite;
+}
+.stand{
+    display: none;
+}
+.hit{
+    display: none;
+}
+.retry{
+    display: none;
+}
+/* -----------------
+    animation
+*--------------- */
+@keyframes r{
+    100% { background-position: 200%; }
+}
+@keyframes flash {
+0%,100% {
+opacity: 1;
+}
+
+50% {
+opacity: 0;
+}
+}
